@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Remote Control</title>
+<style>
+body{
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	background-color:#9f9f9f
+}
+.touche{
+    outline: none;
+    padding: 0px 2px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: BLACK;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    margin: 6px;
+    background-repeat: repeat-x;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: normal;
+}
+.touche::-moz-focus-inner {
+    border: 0;
+}
+.touche:hover{
+    color: red;
+}
+.touche:active{
+    border: 2px solid white;
+    box-shadow: 0 1px #666;
+    transform: translateY(3px);
+}
+.upbtn {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+ 
+}
+.dwbtn {
+    height: 20px;
+    width: 30px;
+    border-radius: 8px;
+}
+
+#remotediv{
+    transform-origin: 0 0;
+    width:220px;
+    height:920px;
+    background: black;
+    border-radius: 106px;
+}
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body oncontextmenu="return false;" >
+<center>
+<div id="remotediv">
+<div style="200px;height:110px"></div>
+<div style="width:200px;height:700px;background: url(image.jpg)">
+<input type="button" RcuKey="42" class="touche upbtn" value="POWER"    style="width: 72px;background: #eaeaea;">
+<input type="button" RcuKey="22" class="touche upbtn" value="TV/R"     style="font-stretch: ultra-condensed;">
+<input type="button" RcuKey="23" class="touche upbtn" value="x">
+<br>
+<input type="button" RcuKey="24" class="touche upbtn" value="DISPLAY"  style="font-stretch: ultra-condensed;">
+<input type="button" RcuKey="25" class="touche upbtn" value="MODE"     style="font-stretch: ultra-condensed;">
+<input type="button" RcuKey="26" class="touche upbtn" value="TIME"     style="font-stretch: ultra-condensed;">
+<input type="button" RcuKey="44" class="touche upbtn" value="F1">
+<br>
+<input type="button" RcuKey="13" class="touche upbtn" value="1">
+<input type="button" RcuKey="14" class="touche upbtn" value="2">
+<input type="button" RcuKey="15" class="touche upbtn" value="3">
+<input type="button" RcuKey="16" class="touche upbtn" value="4">
+<br>
+<input type="button" RcuKey="17" class="touche upbtn" value="5">
+<input type="button" RcuKey="18" class="touche upbtn" value="6">
+<input type="button" RcuKey="19" class="touche upbtn" value="7">
+<input type="button" RcuKey="20" class="touche upbtn" value="8">
+<br>
+<input type="button" RcuKey="21" class="touche upbtn" value="9">
+<input type="button" RcuKey="12" class="touche upbtn" value="0">
+<input type="button" RcuKey="41" class="touche upbtn" value="SLEEP"    style="font-stretch: ultra-condensed;">
+<input type="button" RcuKey="43" class="touche upbtn" value="USB">
+<br>
+<input type="button" RcuKey="8"  class="touche upbtn" value="AUDIO"    style="background-color: #ff3206;font-stretch: ultra-condensed;">
+<input type="button" RcuKey="9"  class="touche upbtn" value="PAUSE"    style="background-color: #4cff41;font-stretch: ultra-condensed;">
+<input type="button" RcuKey="10" class="touche upbtn" value="ZOOM"     style="background-color: #f9f93e;font-stretch: ultra-condensed;">
+<input type="button" RcuKey="11" class="touche upbtn" value="INFO"     style="background-color: #3636cc;font-stretch: ultra-condensed;">
+<br>
+<input type="button" RcuKey="6"  class="touche upbtn" value="MENU"     style="margin-right: 53px;width: 28px;height: 28px;font-stretch: condensed;">
+<input type="button" RcuKey="7"  class="touche upbtn" value="EXIT"     style="margin-left:  53px;width: 28px;height: 28px;font-stretch: condensed;">
+<br>
+<input type="button" RcuKey="1"  class="touche upbtn" value="&#x25B2;" style="margin: 0;width: 54px;height: 27px;font-size: 18px;border-top-right-radius: 81px;border-top-left-radius: 81px;">
+<br>
+<input type="button" RcuKey="3"  class="touche upbtn" value="&#x25C0"  style="margin: 0;height: 54px;border-top-left-radius: 81px;border-bottom-left-radius: 81px;width: 27px;font-size: 16px;">
+<input type="button" RcuKey="5"  class="touche upbtn" value="OK"       style="width: 54px;height: 54px;border-radius: 27px;font-size: 18px; margin:2px;">
+<input type="button" RcuKey="4"  class="touche upbtn" value="&#x25B6"  style="margin: 0;height: 54px;width: 27px;font-size: 18px;border-bottom-right-radius: 81px;border-top-right-radius: 81px;">
+<br>
+<input type="button" RcuKey="2"  class="touche upbtn" value="&#x25BC;" style="margin: 0;width: 54px;height: 27px;font-size: 18px;border-bottom-right-radius: 81px;border-bottom-left-radius: 81px;">
+<br>
+
+<div style="height:90px;">
+<div style="display: inline-block;width:50px">
+<div class="touche upbtn" style="height: 90px;padding:0;margin:0;">
+<input type="button" RcuKey="35" class="touche upbtn" value="+" style="margin:0;margin-bottom: 5px;">
+<p style="margin:0">VOL</p>
+<input type="button" RcuKey="36" class="touche upbtn" value="-" style="margin:0;margin-top: 5px;">
+</div>
+</div>
+<div style="display: inline-block;width:80px">
+<input class="touche upbtn" value="SAT" type="button" RcuKey="30" style="postion:fixed;">
+</div>
+<div style="display: inline-block;width:50px">
+<div class="touche upbtn" style="height: 90px;padding:0;margin:0;">
+<input type="button" RcuKey="69" class="touche upbtn" value="+" style="margin:0;margin-bottom: 5px;">
+<p style="margin:0">CH</p>
+<input type="button" RcuKey="70" class="touche upbtn" value="-" style="margin:0;margin-top: 5px;">
+</div>
+</div>
+</div>
+<br>
+
+<input type="button" RcuKey="29" class="touche dwbtn" value="RECALL" style="font-size: 8px;font-stretch: ultra-condensed;">
+<input type="button" RcuKey="33" class="touche dwbtn" value="FAV">
+<input type="button" RcuKey="31" class="touche dwbtn" value="SUB">
+<input type="button" RcuKey="37" class="touche dwbtn" value="&#x25B2;">
+<br>
+<input type="button" RcuKey="39" class="touche dwbtn" value="FIND">
+<input type="button" RcuKey="32" class="touche dwbtn" value="EPG">
+<input type="button" RcuKey="34" class="touche dwbtn" value="TXT">
+<input type="button" RcuKey="38" class="touche dwbtn" value="&#x25BC;">
+<br>
+<input type="button" RcuKey="45" class="touche dwbtn" value="F2">
+<input type="button" RcuKey="46" class="touche dwbtn" value="F3">
+<input type="button" RcuKey="47" class="touche dwbtn" value="F4">
+<input type="button" RcuKey="48"  class="touche dwbtn" value="IP">
+<br>
+<input type="button" RcuKey="59" class="touche dwbtn" value="&#x25C0;&#x25C0;">
+<input type="button" RcuKey="60" class="touche dwbtn" value="&#x25B6;&#x25B6;">
+<input type="button" RcuKey="61" class="touche dwbtn" value="&#x25B6;">
+<input type="button" RcuKey="62" class="touche dwbtn" value="&#x25FC;">
+<br>
+<input type="button" RcuKey="64" class="touche dwbtn" value="&#x25AE;&#x25C0;&#x25C0;">
+<input type="button" RcuKey="65" class="touche dwbtn" value="&#x25B6;&#x25B6;&#x25AE;">
+<input type="button" RcuKey="63" class="touche dwbtn" value="&#x25AE;&#x25AE;">
+<input type="button" RcuKey="58" class="touche dwbtn" value="&#x25CF;" style="color: red;">
+</div>
+</div>
+</center>
+</body>
+</html>
+<script>
+$(".upbtn,.dwbtn").click(function(){
+	url = "/?RcuKey=" + this.getAttribute("RcuKey");
+	$.get(url);
+});
+</script>
