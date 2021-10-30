@@ -4,9 +4,14 @@ Credits: (yiyang) https://www.tunisia-sat.com/forums/threads/4127508/
 
 This Java APP is a PC version of G-MScreen Mobile client program for STB(Set Top Box).
 
+Abdroid Version by max_cao (Play Store): https://play.google.com/store/apps/details?id=mktvsmart.screen
+
 Main Functions:
+
 1.Search/Switch channels from STB
+
 2.Watching Channles from STB by laptop device with this APP installed.
+
 3.Virtual Remote Control interface,including buttons,gyro and touch board.
 
 
